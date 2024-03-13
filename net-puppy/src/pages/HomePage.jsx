@@ -7,6 +7,7 @@ import Content from "../components/HomePageComp/Content";
 import Management from "../components/HomePageComp/Management";
 import VirtualTour from "../components/HomePageComp/VirtualTour";
 import Middle from "../components/HomePageComp/Middle";
+import Ranking from "../components/HomePageComp/Ranking";
 
 
 const HomePage = () => {
@@ -23,6 +24,7 @@ const HomePage = () => {
         <Management />
         <VirtualTour />
         <Middle />
+        <Ranking />
         <div>Container</div>
     </div>
   </DIV>;
