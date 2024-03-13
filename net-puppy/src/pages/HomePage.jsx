@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Upper from "../components/HomePageComp/Upper"
 import Video from "../components/HomePageComp/Video";
+import Content from "../components/HomePageComp/Content";
 
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
     <div className="container">
         <Upper />
         <Video />
+        <Content />
         <div>Container</div>
     </div>
   </DIV>;

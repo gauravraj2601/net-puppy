@@ -155,7 +155,6 @@ const DIV = styled.div`
 
   #right-div {
     width: 43%;
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     gap: 30%;
