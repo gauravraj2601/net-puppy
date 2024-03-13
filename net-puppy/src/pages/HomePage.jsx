@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Upper from "../components/HomePageComp/Upper"
 import Video from "../components/HomePageComp/Video";
 import Content from "../components/HomePageComp/Content";
+import Management from "../components/HomePageComp/Management";
 
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
         <Upper />
         <Video />
         <Content />
+        <Management />
         <div>Container</div>
     </div>
   </DIV>;
