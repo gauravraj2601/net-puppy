@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
+import Upper from "../components/HomePageComp/Upper"
+import Video from "../components/HomePageComp/Video";
+
 
 const HomePage = () => {
   return <DIV>
@@ -9,7 +12,11 @@ const HomePage = () => {
         <Navbar />
         </div>
     </div>
-    <div className="container">Container</div>
+    <div className="container">
+        <Upper />
+        <Video />
+        <div>Container</div>
+    </div>
   </DIV>;
 };
 
@@ -32,7 +39,7 @@ const DIV = styled.div`
   //  media query
   @media (min-width: 1200px) {
     .container{
-        width: 1170px;
+        width: 1300px;
     }
   }
   @media (min-width: 768px) and (max-width: 1199px) {
