@@ -5,6 +5,7 @@ import Upper from "../components/HomePageComp/Upper"
 import Video from "../components/HomePageComp/Video";
 import Content from "../components/HomePageComp/Content";
 import Management from "../components/HomePageComp/Management";
+import VirtualTour from "../components/HomePageComp/VirtualTour";
 
 
 const HomePage = () => {
@@ -19,6 +20,7 @@ const HomePage = () => {
         <Video />
         <Content />
         <Management />
+        <VirtualTour />
         <div>Container</div>
     </div>
   </DIV>;
@@ -28,7 +30,6 @@ export default HomePage;
 
 const DIV = styled.div`
   .container{
-    border: 2px dotted black;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
