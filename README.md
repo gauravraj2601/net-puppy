@@ -5,6 +5,8 @@ Welcome to Net Puppy! This is a project that [brief description of the project].
 ## Deployed Link
 
 You can access the deployed version of Net Puppy [here](#).
+## Home Page
+![homepage](https://github.com/gauravraj2601/net-puppy/assets/123883332/99622f83-c4ce-4207-9fae-6834a1ccc9a4)
 
 ## Installation
 
