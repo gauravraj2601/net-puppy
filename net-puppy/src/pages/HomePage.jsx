@@ -6,6 +6,7 @@ import Video from "../components/HomePageComp/Video";
 import Content from "../components/HomePageComp/Content";
 import Management from "../components/HomePageComp/Management";
 import VirtualTour from "../components/HomePageComp/VirtualTour";
+import Middle from "../components/HomePageComp/Middle";
 
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
         <Content />
         <Management />
         <VirtualTour />
+        <Middle />
         <div>Container</div>
     </div>
   </DIV>;

@@ -1,20 +1,52 @@
 import React from "react";
-import horse from "../../Assets/horse.svg";
-import swim from "../../Assets/swimming.svg";
-import taek from "../../Assets/taekwondo.svg";
-import context from "../../Assets/context.png";
+import image3 from "../../Assets/image3.svg";
+
+import image1 from "../../Assets/image1.svg";
 import context2 from "../../Assets/context2.png";
 import more from "../../Assets/seemore.svg";
 import arrow from "../../Assets/arrow.png";
-import rectangle from "../../Assets/Rectangle 19.svg";
+import image2 from "../../Assets/image2.svg";
 import styled from "styled-components";
-const Upper = () => {
+const Middle = () => {
   return (
     <DIV>
+      <div id="right-div">
+        <div>
+          <div id="taekwondo">
+            <div className="content">
+              <h2>Top Boarding School in</h2>
+              <h2>Uttarakhand, India</h2>
+              
+            </div>
+          </div>
+          <div id="horse">
+            <div className="content">
+            <h2>International School Award,</h2>
+              <h2>India 2019</h2>
+            </div>
+            {/* <div>
+                <img src={rectangle} alt="" />
+            </div> */}
+          </div>
+        </div>
+      </div>
+      <div id="mid-div">
+        {" "}
+        <img src={more} alt="seemore" />{" "}
+      </div>
       <div id="left-div">
         <div>
-          {" "}
-          <img src={context} alt="context" />{" "}
+          <h1
+            style={{
+              textAlign: "start",
+              fontFamily: "Fraunces",
+              fontWeight: "400",
+              width: "450px",
+            }}
+          >
+            Awards and achievements, gleaming in sight, Honor efforts and
+            perseverance in flight.
+          </h1>
         </div>
         <div>
           {" "}
@@ -23,51 +55,27 @@ const Upper = () => {
         <div className="image-content">
           <div>
             {" "}
-            <h1>Swimming</h1>
-            <p>22 Acres, Pollution- Free,</p>
-            <p>World-Class</p>
+            <h2>Best Residential School</h2>
+              <h2>Uttarakhand, India</h2>
           </div>{" "}
         </div>
         <div id="activity">
-            <h3>SEE ALL ACTIVITIES</h3>
-            <img src={arrow} alt="arrow" />
-        
-        </div>
-      </div>
-      <div id="mid-div">
-        {" "}
-        <img src={more} alt="seemore" />{" "}
-      </div>
-      <div id="right-div">
-        <div>
-          <div id="taekwondo">
-            <div className="content">
-              <h1>Taekwondo</h1>
-              <p>22 Acres, Pollution- Free,</p>
-              <p>World-Class</p>
-            </div>
-          </div>
-          <div id="horse">
-            <div className="content">
-              <h1>Horse Riding</h1>
-              <p>22 Acres, Pollution- Free,</p>
-              <p>World-Class</p>
-            </div>
-            {/* <div>
-                <img src={rectangle} alt="" />
-            </div> */}
-          </div>
+          <h3>SEE ALL AWARDS</h3>
+          <img src={arrow} alt="arrow" />
         </div>
       </div>
     </DIV>
   );
 };
 
-export default Upper;
+export default Middle;
 
 const DIV = styled.div`
   display: flex;
-  height: 958px;
+  height: 918px;
+  /* border: 1px solid red; */
+  margin-top: 220px;
+
   #left-div {
     width: 51%;
   }
@@ -77,21 +85,21 @@ const DIV = styled.div`
     height: 134px;
     margin-top: 78px;
   }
-  #left-div div:nth-child(2) {
+  #left-div div:nth-child(2) img {
     /* background-color: yellow; */
-    width: 426px;
-    height: 48px;
-    margin-top: 14px;
+    width: 186px;
+    margin-top: -18px;
+    margin-left: -440px;
   }
   .image-content {
-    position: relative; 
-    background-image: url(${swim});
+    position: relative;
+    background-image: url(${image2});
     background-size: cover;
     background-repeat: no-repeat;
     width: 513px;
     height: 288px;
     margin-top: 96px;
-    margin-left: 62px;
+    margin-left: 122px;
     border-radius: 10px;
     align-items: end;
     &::before {
@@ -126,27 +134,27 @@ const DIV = styled.div`
     margin-top: -20px;
     font-weight: 500;
   }
-  #activity{
+  #activity {
     width: 371px;
     height: 49px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 161px;
-    margin-left: 50px;
+    margin-top: 111px;
+    margin-left: 130px;
     border-radius: 30px;
-    
+
     border: 2px solid #dbc79f;
   }
-  #activity img{
+  #activity img {
     width: 53px;
     height: 28px;
   }
 
   #mid-div {
     width: 6%;
-    margin-top: 32%;
-    margin-left: -3%;
+    margin-top: 28%;
+    margin-left: 8%;
   }
   #mid-div img {
     width: 160px;
@@ -162,7 +170,7 @@ const DIV = styled.div`
   /* #right-div */
   #taekwondo {
     position: relative; /* Add position relative */
-    background-image: url(${taek});
+    background-image: url(${image3});
     background-size: cover;
     background-repeat: no-repeat;
     width: 513px;
@@ -192,22 +200,22 @@ const DIV = styled.div`
     position: relative;
     z-index: 1;
     height: 100px;
-    width: 40%;
+    width: 70%;
     padding: 5px 0 0 50px;
     color: white;
-    margin-top: 170px;
+    margin-top: 200px;
     background-color: transparent;
     /* margin-bottom: 100px; */
     text-align: start;
   }
-  .content p {
+  .content h2 {
     margin-top: -20px;
     font-weight: 500;
   }
 
   #horse {
     position: relative;
-    background-image: url(${horse});
+    background-image: url(${image1});
     background-size: cover;
     background-repeat: no-repeat;
     width: 513px;

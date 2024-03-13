@@ -34,7 +34,7 @@ export default Management;
 
 const DIV = styled.div`
   height: 500px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   span {
     font-size: 30px;
     font-family: "Abril Fatface", serif;
